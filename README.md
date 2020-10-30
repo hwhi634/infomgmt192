@@ -4,8 +4,8 @@ Language Hub is aiming to promote language learning for all people interested in
 
 ## Usage
 contact modal
-``fake`` login/sign in
-collapsable content
-drop downsearch
-level editor for price of lessons
+Markup :  - ``fake`` login/sign in
+          - collapsable content
+          - drop downsearch
+          - level editor for price of lessons
 
