@@ -3,7 +3,7 @@
 Language Hub is aiming to promote language learning for all people interested in different culturesunder the UN guidelines
 
 ## Usage
-contact modal
+- contact modal
 
 - ``fake`` login/sign in
 
