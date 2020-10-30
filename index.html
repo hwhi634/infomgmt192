@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- page descption and head -->
+
+    <!--page title-->
+    <title>Learning a new language at Language Hub</title> 
+    <!--page title-->
+
+    <!--URL, name and address of websites-->
+
+    <!-- meta and descption -->
+    <meta name="description" content="Learn languages at Language Hub！Sign up to explore languages you interested in and learn efficiently at Language Hub! Learn another language! What language should I learn">
+    <!-- meta and descption -->
+
+    <link href="static/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: ghostwhite">
+<div class="content">
+	<div class="label"> 
+        <div class="l1">Language Hub</div> 
+        <div id="loginspan">
+            <div class="l2" onclick="userLogin(2)">Sign Up</div>
+            <div class="l3" onclick="userLogin(1)">Log In</div>
+        </div>
+	</div>
+    
+	<hr width="1400px" color="#708090" size="1" style="margin-top:45px" />
+    <div class= “div1”>      
+        <img  src="./img/iiiiiieoobz.png" width="850" height="320" style = "margin-left:20px;margin-top:-2px">
+        <div class="title1">Welcome to language learning hub</div>
+        <div class="title2">"With languages, you are at home everywhere."- Rdmund de waal</div>
+        <div class="title3">Which language you want to learn?</div>
+		<div class="t4">Choose your level of study</div>
+            <select name="langselect" id="langselect" onchange="snapTo();" style="position: absolute;left:420px;top:200px;padding:5px;">
+              <option value="" selected disabled hidden>Choose Language</option>
+              <option value="Asia1" disabled>Eurasia</option>
+              <option value="Asia1"> Russian</option>
+              <option value="Asia1"> Japanese</option>
+              <option value="Asia1"> Chinese</option>
+              <option value="Asia1"> Korean</option>
+              <option value="Asia1"> Arabic</option>
+              <option value="Europe" disabled>Europe</option>
+              <option value="Europe"> French</option>
+              <option value="Europe"> German</option>
+              <option value="Europe"> Ukranian</option>
+              <option value="Europe"> Spanish</option>
+              <option value="American" disabled>English</option>
+              <option value="American"> English</option>
+            </select>
+		<input class="input2" type="text" id="language1" maxlength="2" name="language1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  onkeypress="level();">
+        <div class="title4">English, French, German, Russian, Chinese, Japanese, Korean, Ukrainian, Arabic, Spanish</div>
+        <img src="./img/Online-Learning.jpg" width="450" height="320" style = "margin-left:-5px;margin-top:-2px">
+
+    </div>
+    
+    <div1>
+        <!-- image part -->
+        <img id="flag" src="./img/flag.jpg" width="130" height="80" style = "margin-left:20px;margin-top:-4px">
+        <img id="flag" src="./img/i2.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i3.png" width="130" height="80" style = "margin-top:-4px; margin-left:-5px">
+        <img id="flag" src="./img/i4.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i5.jpg" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i6.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i7.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i8.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i9.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <img id="flag" src="./img/i10.png" width="130" height="80" style = "margin-top:-4px; margin-left:-4px">
+        <!-- end image part -->
+    </div1>   
+    
+    
+    
+    
+    
+    
+    <br>
+    
+    
+    	<hr width="1400px" color="#708090" size="1" style="margin-top:20px" />
+
+
+    
+    <div>
+        
+        <p1>About Us</p1>
+        <br>
+        <p2>We, LanguageHub team, are established in 2020, aiming to promote language learning for all people interested in different cultures and experience the charm of a new language. </p2>
+            
+    </div>
+     
+    
+    	<hr width="1400px" color="#708090" size="1" style="margin-top:20px" />
+    
+    <br>
+    <input readonly class = "buttom2" value="Show Eurasia Language" id="Asia1" onclick="hide('Asia1')">
+    
+    <br>
+    
+    
+    <!-- text part -->
+    <div class = "Asia1" style="display: none;">
+        <h1 class = "languageA">Eurasian Language</h1> <!-- headings -->
+        <br>
+        <div class = "left1">
+            <img src = "./img/country/s1.png" alt = "Russian flag" class = "country">
+            
+            <div class="R1" >Russian lvl:1</div>
+            
+            <div class="R2">Russian (русский язык, tr. rússkiy yazýk)</div>
+            <div class="R3">Russian is the largest native language in<br> Europe, and the most geographically<br>widespread language in Eurasia.</div><!-- text -->
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="http://www.russianlessons.net/">Russian language</a> <!-- this is link text -->
+
+        </div>
+        
+        <div class= "right1">
+            <img src = "./img/i6.png" alt = "Japanese flag"class = "country">
+            <div class="R1" >Japanese lvl:1</div>
+            <div class="R2">Japanese (Nihongo)in Japanese script</div>
+            <div class="R3">Japanesse is an East Asian language spoken <br>by about 128 million people, primarily in<br> Japan, where it is the national language.</div><!-- text -->
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://nihongo-e-na.com/eng/">Japanese language</a> <!-- this is link text -->
+        </div>
+        
+        <div class= "left2">
+            <img src = "./img/CN.png" alt = "Chinese flag" class = "country">
+            <div class="R1" >Chinese lvl:1</div>
+            <div class="R2">Chinese (汉语; 漢語; pinyin: Hànyǔ</div>
+            <div class="R3">Chinese languages are spoken by the <br>ethnic Han Chinese majority and many<br> minority ethnic groups in China. </div><!-- text -->
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://chinesepod.com/">Chinese language</a> <!-- this is link text -->
+        </div>
+        
+        <div class= "right2">
+            <img src = "./img/KE.png" alt = " South Korean flag"class = "country">
+            <div class="R1" >Korean lvl:1</div>
+            <div class="R2">Korean (한국어/韓國語;조선말/朝鮮말)</div>
+            <div class="R3">Korean is the official and national<br> language of both Koreas: North Korea <br>and South Korea.</div><!-- text -->
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://www.howtostudykorean.com/">Korean language</a> <!-- this is link text -->
+        </div>  
+        
+        <div class= "left3">
+            <img src = "./img/Arab.jpg" alt = "Arab Flag"class = "country">
+            <div class="R1" >Arabic lvl:1</div>
+            <div class="R2">Arabic (اَلْعَرَبِيَّةُ or عَرَبِيّ‎,ʿarabīy ) </div>
+            <div class="R3">Arabic is a Semitic language that first <br>emerged in the 1st to 4th centuries CE.<br>It is now the lingua franca of the Arab world.</div>
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://www.madinaharabic.com/">Arabic language</a> <!-- this is link text -->
+        </div>
+        
+    </div>
+    
+    <br>
+    
+    <input readonly class = "buttom2" value="Show Europe Language" id="Europe" onclick="hide('Europe')">
+    
+    <br>
+    
+    <div class = "Europe" style = "margin-left:20px; margin-top: 10px; background-color: whitesmoke;display: none;">
+        <h1 class = "languageT">European Language</h1> <!-- headings -->
+        <br>
+        <div class = "left1">
+            <img src = "./img/country/s6.jpg" alt = "French flag" class = "country">
+            <div class="R1" >French lvl:1</div>
+            <div class="R2">French (français or langue française) </div>
+            <div class="R3">A major world language, French is an official<br> language in 29 countries across multiple<br>continents</div>
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://www.thefrenchexperiment.com/">French language</a> <!-- this is link text -->
+        </div>
+        
+        <div class = "right1">
+            <img src = "./img/country/s7.jpg" class = "country">
+            <div class="R1" >German lvl:1</div>
+            <div class="R2">German (Deutsch, pronounced [dɔʏtʃ])</div>
+            <div class="R3">German is a West Germanic language that is<br>mainly spoken in Central Europe.German is<br>the second most widely spoken Germanic<br>language.</div>
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://learn-german-easily.com/">German language</a> <!-- this is link text -->
+        </div>
+        
+        <div class = "left2">
+            <img src = "./img/Uk.png" alt = "Ukrainian flag"class = "country">
+            <div class="R1" >Ukrainian lvl:1</div>
+            <div class="R2">Ukrainian(ukrayins'ka mova)</div>
+            <div class="R3">It is the official state language of Ukraine<br> and one of the three official languages in<br>the unrecognized state of Transnistria, <br>Moldovan and Russian. </div>
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://www.ukrainianlessons.com/">Ukrainian language</a> <!-- this is link text -->
+        </div>
+        
+        <div class = "right2">
+            <img src = "./img/country/s9.png" alt = "Spanish flag"class = "country">
+            <div class="R1" >Spanish lvl:1</div>
+            <div class="R2">Spanish (español or Castilian castellano)</div>
+            <div class="R3">Spanish is a Romance language that originated<br> in the Iberian Peninsula of Europe and today is<br> a global language with more than 483 million<br> native speakers.</div> <!-- text -->
+            <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+            <a class = "link1"  href="https://studyspanish.com/">Spanish language</a> <!-- this is link text -->
+        </div>      
+    
+        
+
+    </div>
+
+    <br>
+
+    <input readonly class = "buttom2" value="Show English Language" id="American" onclick="hide('American')">
+
+    <br>
+        
+        <div class = "American" style = "margin-left:20px; margin-top: 10px; background-color: whitesmoke;display: none;">
+            <h1 class = "languageT">English Language</h1> <!-- headings -->
+            <br>
+            <div class = "left1">
+                <img src = "./img/flag.jpg" alt = "Britain flag" class = "country">
+                <div class="R1" >English lvl:1</div>
+                <div class="R2">English Pronunciation /ˈɪŋɡlɪʃ/</div>
+                <div class="R3">English is a West Germanic language first<br> spoken in early medieval England which <br>eventually became the leading language of<br>international discourse in today's world.</div>
+                <div class="R4"><span class="lessonPrice">$12</span> per lession</div>
+                <a class = "link1"  href="https://perfectlyspoken.com/">English language</a>
+            </div>
+
+        </div>
+
+    <!-- end text part -->
+    
+    
+    
+    
+    
+    
+    
+	<hr width="1400px" color="#708090" size="1" style="margin-top:20px" />
+
+	<p  style="margin-left:20px;color:#00008B">Company&nbsp;&nbsp;&nbsp;Career&nbsp;&nbsp;&nbsp;Support&nbsp;&nbsp;&nbsp;<a id="contact" onclick="openmodal()">Contact</a></p>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Language Hub contact</h2>
+          </div>
+          <div class="modal-body">
+                <label for="fname">First Name</label>
+                <input type="text" id="modalinput" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="modalinput" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select name="country" id="modalinput">
+                    <option>New Zealand</option>
+                    <option>America</option>
+                    <option>Australia</option>
+                    <option>Taiwan</option>
+                    <option>Hong Kong</option>
+                    <option>Japan</option>
+                    <option>China</option>
+                    <option>Korea</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Ukraine</option>
+                    <option>Spain</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="modalinput" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <button type="submit" value="Submit" id="contactsubmit" onclick="document.getElementsByClassName('close')[0].click(); alert('form sent');">Send</button>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="login" style="display: none;">
+        <div class="row">
+            <h2 style="text-align:center"><span class="userAction"></span> with Social Media</h2>
+            <div class="col">
+              <a href="#" class="fb btn"><span class="userAction"></span> with Facebook</a>
+              <a href="#" class="twitter btn"><span class="userAction"></span> with Twitter</a>
+              <a href="#" class="google btn"><span class="userAction"></span> with Google</a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p style="text-align: center;">Or <span class="userAction"></span> manually:</p>
+              </div>
+              <div style="text-align: center;">
+                <input type="text" id="username" placeholder="Username" style="width: 40%;padding: 10px;" required>
+                <input type="password" id="password" placeholder="Password" style="width: 40%;padding: 10px;" required>
+              </div>
+              <button type="submit" value="Login" id="inputlogin" onclick="userLogged()"><span class="userAction"></span></button>
+            </div>
+            
+          </div>
+    </div>
+      <script src="static/script.js"></script>
+</body>
+</html>
+
+
