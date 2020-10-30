@@ -29,7 +29,7 @@ function level(){
             g=="1";
         }
         for (var i of p){
-            i.innerHTML = "$"+Math.floor(g*15/1.2);
+            i.innerHTML = "$"+Math.floor(20+(g*2));
         }
         for (var i of x){
             var f = i.textContent.split(":");
